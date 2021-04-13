@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MINECRAFT</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body>
+
+	<center>
+
+	<h2 class="btn-primary">MINECRAFT</h2>
+
+	<div id="head_info" class="btn-danger">
+		<h3 id="cur_w">Current Width  = </h3>
+		<h3 id="cur_h">Current Height  = </h3>
+	</div>
+
+	<canvas id="myCanvas" height="600" width = "800"></canvas>
+
+	<div id="btns">
+
+		<span id="incre-decre">
+			<button id="increaseSize" onclick="block_size_plus()"><span class="glyphicon glyphicon-plus-sign"></span></button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button id="decreaseSize" onclick="block_size_minus()"><span class="glyphicon glyphicon-minus-sign"></span></button>
+		</span>
+
+		<br>
+
+		<span id="directions">
+			<button id="up" onclick="up()"><span class="glyphicon glyphicon-arrow-up"></span></button>
+			<button id="down" onclick="down()"><span class="glyphicon glyphicon-arrow-down"></span></button>
+			<button id="left" onclick="left()"><span class="glyphicon glyphicon-arrow-left"></span></button>
+			<button id="right" onclick="right()"><span class="glyphicon glyphicon-arrow-right"></span></button>
+		</span>
+
+		<br>
+
+		<span id="gcut">
+			<button id="ground" onclick="new_image('ground.png')">Ground</button>
+			<button id="cloud" onclick="new_image('cloud.jpg')">Cloud</button>
+			<button id="unique" onclick="new_image('unique.png')">Unique</button>
+			<button id="trunk" onclick="new_image('trunk.jpg')">Trunk</button>
+		</span>
+
+		<br>
+
+		<span id="ryw">
+			<button id="wall" onclick="new_image('wall.jpg')">Wall</button>
+			<button id="yellow_wall" onclick="new_image('yellow_wall.png')">Yellow Wall</button>
+			<button id="roof" onclick="new_image('roof.jpg')">Roof</button>
+		</span>
+
+		<br>
+
+		<span id="dlg">
+			<button id="dark_green" onclick="new_image('dark_green.png')">Dark Green</button>
+			<button id="light_green" onclick="new_image('light_green.png')">Light Green</button>
+		</span>
+	</div>
+
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
